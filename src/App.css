@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin-top: 10%;
+  box-shadow:  3px 5px 8px #dfeff5 ,inset 3px 5px 8px  #dfeff5!important ;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 4rem;
+  align-items: center;
+
+}
+.login .mainicon{
+  width: 120px !important;;
+  height: 120px!important;
+  margin-bottom: 1rem;
+}
+.login>button{
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f4f7f8  ;
+  background-color: #4fc3f7 ;
+  outline-width: 0;
+  border: 1px solid  #4fc3f7;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform .2s;
+  margin-top: 1rem;
+}
+.login>button:hover{
+  transform: scale(1.03);
+}
+@media only screen and (max-width: 800px) {
+  .login>button{
+    font-size: 14px;
+    padding: 10px 15px;
+    font-weight: 600;
+  }
+  .login .mainicon{
+    width: 100px !important;;
+    height: 100px!important;
+    margin-bottom: .7rem;
+  }
+}
+.header{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  margin-right: 20px;
+  background:linear-gradient(to bottom,#b3e5fc ,#e1f5fe);
+
+ 
+}
+.header_body
+{
+  width: 100%;
+  display: flex!important;
+  flex-direction: row!important;
+  justify-content: space-between;
+  margin-left: .5rem;
+  margin-right: .5rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+  padding: '20px';
+  /* background-color: #4fc3f7; */
+  background:linear-gradient(to bottom,#b3e5fc ,#e1f5fe);
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  margin-right: 30px;
+  border-radius: 30px;
+
+}
+.app__formControl{
+  width: 100%;
+  display: flex!important;
+  flex-direction: row!important;
+  justify-content: space-between;
+  padding: '20px'!important;
+  
+}
+.app__iconButton{
+  flex: 0!important;
+}
+.app__formControl>input{
+  flex: 1!important;
+  padding:20px!important;
+  /* background-color: #4fc3f7; */
+  border:none;
+  border-radius: 30px;
+  outline-width: 0;
+  background:linear-gradient(to bottom,#b3e5fc  ,#e1f5fe);
+
+
+
+}
+.app{
+  background: url("https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Flowers-PNG/Decorative_Blue_Flower_PNG_Clip_Art_Image.png?m=1536706274");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 420px;
+  z-index: -1;
+
+  
+}
+.app__body{
+  height: 100vh;
+  overflow: scroll;
+  padding: 15px 10px;
+  padding-bottom: 2rem;
+  
+}
+.app__body::-webkit-scrollbar{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  transition: transform 1.2s;
 }
+.icon:hover{
+  transform: scale(1.2);
+}
+.msg {
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+
+ 
+}
+ 
+.dark {
+  margin-left: auto;
+  text-align: left;
+ }
+.msgtext
+{
+ border-radius: 30px;
+ padding: .5rem 1rem ;
+ margin-left: .5rem;
+ background: #e1f5fe ;
+ border: 1px solid #ddd;
+ font-size: 18px;
+
+
+
+}
+.msgtext.dark{
+  background: #81d4fa ;
+  margin-right: .5rem;
+
+}
+.message_img .img{
+ width: 45px;
+ height: 45px;
+ 
+}
+.message_user
+{
+margin-right: auto;
+text-align: right!important;
+}
+
+
